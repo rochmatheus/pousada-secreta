@@ -1,0 +1,195 @@
+body {
+    margin: 0;
+    background-color: rgb(241, 250, 250);
+}
+
+header {
+    background-color: rgb(241, 250, 250);
+    position: fixed;
+    z-index: 2;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    flex-flow: row wrap;
+    align-items: center;
+    top: 0%;
+    border-bottom: solid thin rgba(0, 128, 128, 0.836);
+}
+ 
+#homepage {
+    position: relative;
+    right: 10%;
+}
+
+#homepage a {
+    position: relative;
+    font-size: 24px;
+    text-decoration: none; 
+}
+
+span {
+    color:teal;
+}
+
+#menunav {
+    position: relative;
+    left: 15%;
+    width: 230px;
+}
+
+#menunav nav ul {
+    display: flex;
+    width: 170px;
+    font-size: 18px;
+    list-style-type: none;   
+}
+
+#menunav nav ul li {
+    width: 55px;
+}
+
+#menunav nav ul li a {
+    text-decoration: none;
+    color: rgb(95, 95, 95);   
+}
+
+#menunav nav ul li a:hover {
+    color: teal;
+    font-weight: bolder;
+}
+
+#link-quartos {
+    position: relative;
+    right: 10px;
+}
+
+.descricao-quartos {
+    color: rgb(95, 95, 95);
+    margin-top: 100px;
+    margin-bottom: 70px;
+    font-size: 32px;
+    text-align: center;
+}
+
+.descricao-quartos p {
+    font-size: 24px;
+}
+
+.informacoes-quarto-titulo {
+    font-size: 32px;
+    text-align: center; 
+    margin-top: 80px; 
+    color: rgb(95, 95, 95);
+}
+
+.fotos-quartos {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.fotos-quartos img {  
+    width: 417px;
+    height: 250px;
+}
+
+.informacoes-quarto-lista {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    font-size: 24px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 50px;
+    border-bottom: solid teal;
+    color: rgb(95, 95, 95);   
+}
+
+.informacoes-quarto-lista li {
+    padding-right: 25px;
+    padding-bottom: 15px;  
+}
+
+footer {
+    background-color:rgb(1, 160, 160);
+    color: rgb(241, 250, 250);
+    height: 245px;
+    margin-top: 80px;
+}
+
+#footer-parte1 {
+    color: white;
+    width: 80%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: solid teal;
+    height: 65%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#contato {
+    display: flex;
+    width: 200px;
+    right: 90px;
+    font-size: 22px;
+}
+
+#endereco {
+    display: flex;
+    position: relative;
+    right: 30px;
+}
+
+#img-endereco {
+    width: 45px;
+    height: 45px;
+    margin-right: 10px;
+}
+
+#cel {
+    display: flex;
+    position: relative;   
+    right: 20px;
+}
+
+#cel a {
+    text-decoration: none;
+    color: white;
+}
+
+#img-cel {
+    width: 45px;
+    height: 45px;
+    margin-right: 10px;
+}
+
+#reservas {
+    display: flex;
+    position: relative;  
+}
+
+#img-reservas {
+    width: 45px;
+    height: 45px;
+    margin-right: 10px;
+}
+#footer-parte2 {
+    color: white;
+    text-align: center;
+}
+
+#dev a:link {
+    text-decoration: none;
+    color: black;
+}
+
+#dev a:visited {
+    color : black;
+}
+#dev a:hover {
+    color: orange;
+}
