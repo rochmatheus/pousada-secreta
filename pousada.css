@@ -118,6 +118,7 @@ span {
 
 #quartos a {
     text-decoration: none;
+    color: rgb(95, 95, 95);
 }
 
 #quarto-solteiro {
@@ -220,7 +221,6 @@ span {
 }
 
 #nossos-quartos {
-    
     width: 350px;
     height: 150px; 
 }
