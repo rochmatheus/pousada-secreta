@@ -357,6 +357,7 @@ footer {
     }
 
     @media (max-width: 320px) {
+        #homepage {margin-left: 20px;}
         .cards {max-width: 320px;}
         .cards p {max-width: 200px;}
         .img-card {
