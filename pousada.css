@@ -248,7 +248,6 @@ footer {
 #contato {
     display: flex;
     width: 200px;
-    right: 90px;
     font-size: 22px;
 }
 
@@ -317,7 +316,31 @@ footer {
         margin-bottom: 0px;
     }
 
-    @media (max-width: 480px) {
-        .cards {width: 450px}
+    @media (max-width: 640px) {
+       footer {height: 400px;}
+       #footer-parte2 {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        height: 140px;
+    }
+    }
+
+    @media (max-width: 580px) {
+        #footer-parte1 {
+            display: flex;
+            justify-content: center;
+        }
+        #contato {
+            position: relative;
+            width: 300px;
+            text-align: center;
+        }
+
+        #contato p {
+            text-align: center;
+            width:300px;
+        }
     }
 }
