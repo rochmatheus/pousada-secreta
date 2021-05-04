@@ -365,6 +365,11 @@ footer {
     }
 
     @media (max-width: 320px) {
+        header {width: 320px;}
+        #homepage {margin-left: 0px;}
+        #menunav {margin-right: 0px;}
+        #seja-bem-vindo h2 {font-size: 26px;}
+        #seja-bem-vindo p {font-size: 18px;}
         #banner {width: 250px; height: 120px;
         }
         #banner h1 {
@@ -374,8 +379,9 @@ footer {
         #banner p {
             font-size: 12px;
         }
-        #homepage {margin-left: 0px;}
-        #menunav {margin-right: 0px;}
+
+        #rota h2 {font-size: 26px;}
+        #rota p {font-size: 18px;}
         .cards {max-width: 320px;}
         .cards p {max-width: 200px;}
         .img-card {
