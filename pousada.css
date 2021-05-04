@@ -15,8 +15,7 @@ header {
 }
  
 #homepage {
-    margin-left: 40px;
-    
+    margin-left: 40px;   
 }
 
 #homepage a {
@@ -317,6 +316,15 @@ footer {
     }
 
     @media (max-width: 640px) {
+        #banner {width: 350px; height: 150px;
+        }
+        #banner h1 {
+            font-size: 36px;
+        }
+        
+        #banner p {
+            font-size: 18px;
+        }
        footer {height: 400px;}
        #footer-parte2 {
         display: flex;
@@ -357,7 +365,17 @@ footer {
     }
 
     @media (max-width: 320px) {
-        #homepage {margin-left: 20px;}
+        #banner {width: 250px; height: 120px;
+        }
+        #banner h1 {
+            font-size: 24px;
+        }
+        
+        #banner p {
+            font-size: 12px;
+        }
+        #homepage {margin-left: 0px;}
+        #menunav {margin-right: 0px;}
         .cards {max-width: 320px;}
         .cards p {max-width: 200px;}
         .img-card {
