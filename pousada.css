@@ -328,6 +328,9 @@ footer {
     }
 
     @media (max-width: 580px) {
+
+        footer {max-width: 100%;}
+
         #footer-parte1 {
             display: flex;
             justify-content: center;
@@ -340,7 +343,27 @@ footer {
 
         #contato p {
             text-align: center;
-            width:300px;
+            width: 300px;
         }
+
+        .cards {max-width: 320px;}
+        .cards p {max-width: 200px;}
+        .img-card {
+            position: relative;
+            float: right;
+            bottom: 110px;
+            width: 90px;
+            height: 110px;
+    }
+
+    @media (max-width: 320px) {
+        .cards {max-width: 320px;}
+        .cards p {max-width: 200px;}
+        .img-card {
+            position: relative;
+            float: right;
+            bottom: 110px;
+            width: 90px;
+            height: 110px;
     }
 }
