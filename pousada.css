@@ -21,7 +21,8 @@ header {
 #homepage a {
     position: relative;
     font-size: 24px;
-    text-decoration: none; 
+    text-decoration: none;
+    color:#5F5F5F; 
 }
 
 span {
@@ -289,6 +290,13 @@ footer {
     height: 45px;
     margin-right: 10px;
 }
+
+#reservas a {
+    display: flex;
+    text-decoration: none;
+    color: white;
+}
+
 #footer-parte2 {
     color: white;
     text-align: center;
@@ -390,5 +398,4 @@ footer {
             bottom: 110px;
             width: 90px;
             height: 110px;
-    }
-}
+        }
