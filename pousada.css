@@ -245,12 +245,6 @@ footer {
     margin-right: auto;
 }
 
-#contato {
-    display: flex;
-    width: 200px;
-    font-size: 22px;
-}
-
 #endereco {
     display: flex;
     position: relative;
@@ -261,6 +255,12 @@ footer {
     width: 45px;
     height: 45px;
     margin-right: 10px;
+}
+
+#contato {
+    display: flex;
+    width: 200px;
+    font-size: 22px;
 }
 
 #cel {
@@ -315,87 +315,44 @@ footer {
 }
 
 @media (max-width: 1024px) {
-    #sobre-2 {display: flex;
-        flex-flow: column;
-        justify-content: center;
-        align-items: center;
-        height: 650px;
-        margin-bottom: 0px;
-    }
+    #sobre-2 {display: flex; flex-flow: column; justify-content: center;align-items: center; height: 650px; margin-bottom: 0px;}
+}
 
-    @media (max-width: 640px) {
-        #banner {width: 350px; height: 150px;
-        }
-        #banner h1 {
-            font-size: 36px;
-        }
-        
-        #banner p {
-            font-size: 18px;
-        }
-       footer {height: 400px;}
-       #footer-parte2 {
-        display: flex;
-        flex-flow: column;
-        justify-content: center;
-        align-items: center;
-        height: 140px;
-    }
-    }
+@media (max-width: 865px) {
+    #endereco {display: flex; position: relative; right: 0px;}
+    #cel {display: flex; position: relative; right: 0px;}
+}
 
-    @media (max-width: 580px) {
+@media (max-width: 640px) {
+    #banner {width: 350px; height: 150px;}
+    #banner h1 {font-size: 36px;}
+    #banner p {font-size: 18px;}
+    footer {height: 400px;}
+    #footer-parte2 {display: flex; flex-flow: column; justify-content: center; align-items: center; height: 140px;}
+}
 
-        footer {max-width: 100%;}
+@media (max-width: 580px) {
+    footer {max-width: 100%;}
+    #footer-parte1 {display: flex; justify-content: center;}
+    #contato {position: relative; width: 300px; text-align: center;}
+    #contato p {text-align: center; width: 300px;}
+    .cards {max-width: 320px;}
+    .cards p {max-width: 200px;}
+    .img-card {position: relative; float: right; bottom: 110px; width: 90px;height: 110px;}
+}
 
-        #footer-parte1 {
-            display: flex;
-            justify-content: center;
-        }
-        #contato {
-            position: relative;
-            width: 300px;
-            text-align: center;
-        }
-
-        #contato p {
-            text-align: center;
-            width: 300px;
-        }
-
-        .cards {max-width: 320px;}
-        .cards p {max-width: 200px;}
-        .img-card {
-            position: relative;
-            float: right;
-            bottom: 110px;
-            width: 90px;
-            height: 110px;
-    }
-
-    @media (max-width: 320px) {
-        header {width: 320px;}
-        #homepage {margin-left: 0px;}
-        #menunav {margin-right: 0px;}
-        #seja-bem-vindo h2 {font-size: 26px;}
-        #seja-bem-vindo p {font-size: 18px;}
-        #banner {width: 250px; height: 120px;
-        }
-        #banner h1 {
-            font-size: 24px;
-        }
-        
-        #banner p {
-            font-size: 12px;
-        }
-
-        #rota h2 {font-size: 26px;}
-        #rota p {font-size: 18px;}
-        .cards {max-width: 320px;}
-        .cards p {max-width: 200px;}
-        .img-card {
-            position: relative;
-            float: right;
-            bottom: 110px;
-            width: 90px;
-            height: 110px;
-        }
+@media (max-width: 320px) {
+    header {width: 320px;}
+    #homepage {margin-left: 0px;}
+    #menunav {margin-right: 0px;}
+    #seja-bem-vindo h2 {font-size: 26px;}
+    #seja-bem-vindo p {font-size: 18px;}
+    #banner {width: 250px; height: 120px;}
+    #banner h1 {font-size: 24px;}
+    #banner p {font-size: 12px;}
+    #rota h2 {font-size: 26px;}
+    #rota p {font-size: 18px;}
+    .cards {max-width: 320px;}
+    .cards p {max-width: 200px;}
+    .img-card {position: relative; float: right; bottom: 110px; width: 90px; height: 110px;}
+}
