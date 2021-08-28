@@ -200,3 +200,27 @@ footer {
 #dev a:hover {
     color: orange;
 }
+
+@media (max-width: 865px) {
+    #endereco {display: flex; position: relative; right: 0px;}
+    #cel {display: flex; position: relative; right: 0px;}
+}
+
+@media (max-width: 640px) {
+    footer {height: 400px;}
+    #footer-parte2 {display: flex; flex-flow: column; justify-content: center; align-items: center; height: 140px;}
+}
+
+@media (max-width: 580px) {
+    footer {max-width: 100%;}
+    #footer-parte1 {display: flex; justify-content: center;}
+    #contato {position: relative; width: 300px; text-align: center;}
+    #contato p {text-align: center; width: 300px;}
+    
+}
+
+@media (max-width: 320px) {
+    header {width: 320px;}
+    #homepage {margin-left: 0px;}
+    #menunav {margin-right: 0px;}
+}
