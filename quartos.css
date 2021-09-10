@@ -5,36 +5,34 @@ body {
 
 header {
     background-color: rgb(241, 250, 250);
+    width: 100%;
     position: fixed;
     z-index: 2;
+    top: 0px;
     display: flex;
-    width: 100%;
-    justify-content: space-around;
-    flex-flow: row wrap;
+    justify-content: space-between;
     align-items: center;
-    top: 0%;
     border-bottom: solid thin rgba(0, 128, 128, 0.836);
 }
  
 #homepage {
-    position: relative;
-    right: 10%;
+    margin-left: 40px;   
 }
 
 #homepage a {
     position: relative;
     font-size: 24px;
     text-decoration: none;
-    color: #5F5F5F;  
+    color:#5F5F5F; 
 }
 
 span {
-    color:teal;
+    color: teal;
 }
 
 #menunav {
     position: relative;
-    left: 15%;
+    margin-right: 40px;
     width: 230px;
 }
 
@@ -201,9 +199,19 @@ footer {
     color: orange;
 }
 
+@media (max-width: 1250px) {
+    .fotos-quartos {display: flex; justify-content: space-around;}
+    .fotos-quartos :last-child {margin-top: 60px;}
+}
+
 @media (max-width: 865px) {
     #endereco {display: flex; position: relative; right: 0px;}
     #cel {display: flex; position: relative; right: 0px;}
+}
+
+@media (max-width: 834px) {
+    .fotos-quartos img {margin: 20px 0px}
+    .fotos-quartos :last-child {margin-top: 20px;}
 }
 
 @media (max-width: 640px) {
@@ -212,9 +220,11 @@ footer {
 }
 
 @media (max-width: 580px) {
+    #homepage {position: relative; right: 0%;}
+    #menunav {position: relative; left: 10%;}
     footer {max-width: 100%;}
-    #footer-parte1 {display: flex; justify-content: center;}
-    #contato {position: relative; width: 300px; text-align: center;}
+    #footer-parte1 {display: flex; justify-content: center; align-items: center;}
+    #contato {width: 300px; text-align: center;}
     #contato p {text-align: center; width: 300px;}
     
 }
