@@ -8,7 +8,6 @@ header {
     width: 100%;
     position: fixed;
     z-index: 2;
-    top: 0px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -64,10 +63,18 @@ span {
 
 .descricao-quartos {
     color: rgb(95, 95, 95);
-    margin-top: 100px;
     margin-bottom: 70px;
     font-size: 32px;
     text-align: center;
+}
+
+section {
+    position: relative;
+    top: 100px;
+}
+
+#quarto-solteiro {
+    margin-top: 00px;
 }
 
 .descricao-quartos p {
@@ -76,8 +83,7 @@ span {
 
 .informacoes-quarto-titulo {
     font-size: 32px;
-    text-align: center; 
-    margin-top: 80px; 
+    text-align: center;  
     color: rgb(95, 95, 95);
 }
 
@@ -110,11 +116,29 @@ span {
     padding-bottom: 15px;  
 }
 
+#informacoes-quarto-ultima-lista {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    font-size: 24px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 50px;
+    color: rgb(95, 95, 95); 
+}
+
+#informacoes-quarto-ultima-lista li {
+    padding-right: 25px;
+    padding-bottom: 15px; 
+}
+
 footer {
     background-color:rgb(1, 160, 160);
     color: rgb(241, 250, 250);
     height: 245px;
-    margin-top: 80px;
+    position: relative;
+    top: 100px;
 }
 
 #footer-parte1 {
@@ -221,7 +245,7 @@ footer {
 
 @media (max-width: 580px) {
     #homepage {position: relative; right: 0%;}
-    #menunav {position: relative; left: 10%;}
+    #menunav {position: relative; margin-right: 0px;}
     footer {max-width: 100%;}
     #footer-parte1 {display: flex; justify-content: center; align-items: center;}
     #contato {width: 300px; text-align: center;}
@@ -229,8 +253,13 @@ footer {
     
 }
 
+@media (max-width: 405px) {
+    .fotos-quartos img {width: 100%;}     
+}
+
 @media (max-width: 320px) {
-    header {width: 320px;}
-    #homepage {margin-left: 0px;}
-    #menunav {margin-right: 0px;}
+    header {max-width: 320px;}
+    #homepage {margin-left: 10px;}
+    #menunav {margin-right: 0px; left: 0px;}
+    img {max-width: 320px;}
 }
