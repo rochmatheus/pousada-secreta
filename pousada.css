@@ -341,9 +341,13 @@ footer {
     .img-card {position: relative; float: right; bottom: 110px; width: 90px;height: 110px;}
 }
 
+@media (max-width: 350px) {
+    #homepage {margin-left: 30px;}
+}
+
 @media (max-width: 320px) {
     header {width: 320px;}
-    #homepage {margin-left: 0px;}
+    #homepage {margin-left: 10px;}
     #menunav {margin-right: 0px;}
     #seja-bem-vindo h2 {font-size: 26px;}
     #seja-bem-vindo p {font-size: 18px;}
