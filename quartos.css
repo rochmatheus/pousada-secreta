@@ -254,6 +254,7 @@ footer {
 }
 
 @media (max-width: 405px) {
+    #homepage {margin-left: 25px;}
     .fotos-quartos img {width: 100%;}     
 }
 
