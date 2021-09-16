@@ -244,8 +244,11 @@ footer {
 }
 
 
+
 @media (max-width: 426px) {
     #homepage {margin-left: 25px;}
+    .informacoes-quarto-lista {display: block;}
+    #informacoes-quarto-ultima-lista {display: block;}
 }
 
 @media (max-width: 405px) {
