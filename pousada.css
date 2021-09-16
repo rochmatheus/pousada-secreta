@@ -182,38 +182,30 @@ section {
     color: rgb(95, 95, 95);
 }
 
-#sobre-2 {
-    position: relative;
+#sobre-2-container {
     display: flex;
     flex-flow: row wrap;
-    justify-content: center;
-    width: 100%;
-    height: 300px;
+    justify-content: space-around;
+    width: 80%;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 80px;
-    color: rgb(95, 95, 95);
+    margin-bottom: 100px;
 }
 
-.cards {
-    position: relative;
-    width: 470px;
-    height: 150px;
-    margin: 10px;
+.boxcard {
+    display: block;
+    width: 400px;
 }
 
-.cards p {
-    width: 360px;
-    margin-right: 0px;
-}
+.paragrafo-e-imagem {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
 
+}
 .img-card {
-    position: relative;
-    float: right;
-    bottom: 100px;
-    width: 90px;
-    height: 110px;
-     
+    width: 130px;
+    height: 150px;
 }
 
 footer {
@@ -304,8 +296,8 @@ footer {
     color: orange;
 }
 
-@media (max-width: 1024px) {
-    #sobre-2 {display: flex; flex-flow: column; justify-content: center; align-items: center; height: 650px; margin-bottom: 0px;}
+@media (max-width: 1074px) {
+    #sobre-2-container {display: flex; flex-direction: column; align-items: center;}   
 }
 
 @media (max-width: 865px) {
@@ -326,9 +318,16 @@ footer {
     #footer-parte1 {display: flex; justify-content: center;}
     #contato {position: relative; width: 300px; text-align: center;}
     #contato p {text-align: center; width: 300px;}
-    .cards {max-width: 320px;}
-    .cards p {max-width: 200px;}
-    .img-card {position: relative; float: right; bottom: 110px; width: 90px;height: 110px;}
+}
+
+@media (max-width: 480px) {
+    #sobre-2-container {width: 100%;}
+}
+
+@media (max-width: 400px) {
+    header {width: 100%}
+    #sobre-2-container {width: 100vw;}
+    .boxcard {width: 100%;}
 }
 
 @media (max-width: 320px) {
@@ -342,7 +341,9 @@ footer {
     #banner p {font-size: 12px;}
     #rota h2 {font-size: 26px;}
     #rota p {font-size: 18px;}
-    .cards {max-width: 320px;}
-    .cards p {max-width: 200px;}
-    .img-card {position: relative; float: right; bottom: 110px; width: 90px; height: 110px;}
+    #sobre {margin: 40px 0px;}
+    #sobre-2-container {margin-bottom: 50px;}
+    .paragrafo-e-imagem {display: flex; flex-direction: column;}
+    .boxcard {width: 100%;}
+    h3 {text-align: center;}
 }
