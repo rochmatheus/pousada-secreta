@@ -321,6 +321,7 @@ footer {
 }
 
 @media (max-width: 480px) {
+    #homepage {margin-left: 25px;}
     #sobre-2-container {width: 100%;}
 }
 
