@@ -9,15 +9,11 @@ header {
     position: fixed;
     z-index: 2;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     border-bottom: solid thin rgba(0, 128, 128, 0.836);
 }
  
-#homepage {
-    margin-left: 40px;   
-}
-
 #homepage a {
     position: relative;
     font-size: 24px;
@@ -27,12 +23,6 @@ header {
 
 span {
     color: teal;
-}
-
-#menunav {
-    position: relative;
-    margin-right: 40px;
-    width: 230px;
 }
 
 #menunav nav ul {
@@ -315,7 +305,7 @@ footer {
 }
 
 @media (max-width: 1024px) {
-    #sobre-2 {display: flex; flex-flow: column; justify-content: center;align-items: center; height: 650px; margin-bottom: 0px;}
+    #sobre-2 {display: flex; flex-flow: column; justify-content: center; align-items: center; height: 650px; margin-bottom: 0px;}
 }
 
 @media (max-width: 865px) {
@@ -339,10 +329,6 @@ footer {
     .cards {max-width: 320px;}
     .cards p {max-width: 200px;}
     .img-card {position: relative; float: right; bottom: 110px; width: 90px;height: 110px;}
-}
-
-@media (max-width: 350px) {
-    #homepage {margin-left: 30px;}
 }
 
 @media (max-width: 320px) {

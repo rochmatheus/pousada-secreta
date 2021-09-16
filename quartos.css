@@ -9,13 +9,9 @@ header {
     position: fixed;
     z-index: 2;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     border-bottom: solid thin rgba(0, 128, 128, 0.836);
-}
- 
-#homepage {
-    margin-left: 40px;   
 }
 
 #homepage a {
@@ -27,12 +23,6 @@ header {
 
 span {
     color: teal;
-}
-
-#menunav {
-    position: relative;
-    margin-right: 40px;
-    width: 230px;
 }
 
 #menunav nav ul {
