@@ -322,13 +322,16 @@ footer {
 
 @media (max-width: 480px) {
     #homepage {margin-left: 25px;}
+    #seja-bem-vindo h2 {font-size: 26px;}
+    #seja-bem-vindo p {font-size: 18px;}
     #sobre-2-container {width: 100%;}
+    #rota h2 {font-size: 26px;}
 }
 
 @media (max-width: 400px) {
     header {width: 100%}
     #sobre-2-container {width: 100vw;}
-    .boxcard {width: 100%;}
+    .boxcard {width: 90%;}
 }
 
 @media (max-width: 320px) {
@@ -342,9 +345,9 @@ footer {
     #banner p {font-size: 12px;}
     #rota h2 {font-size: 26px;}
     #rota p {font-size: 18px;}
-    #sobre {margin: 40px 0px;}
+    #sobre {margin: 40px 0px 0px 0px;}
     #sobre-2-container {margin-bottom: 50px;}
     .paragrafo-e-imagem {display: flex; flex-direction: column;}
-    .boxcard {width: 100%;}
+    .boxcard {width: 90%;}
     h3 {text-align: center;}
 }
