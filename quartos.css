@@ -243,8 +243,6 @@ footer {
     
 }
 
-
-
 @media (max-width: 426px) {
     #homepage {margin-left: 25px;}
     .informacoes-quarto-lista {display: block;}
@@ -262,7 +260,6 @@ footer {
 }
 
 @media (max-width: 320px) {
-    header {max-width: 320px;}
     #homepage {margin-left: 10px;}
     #menunav {margin-right: 0px; left: 0px;}
     img {max-width: 320px;}

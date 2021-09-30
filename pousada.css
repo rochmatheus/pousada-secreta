@@ -326,16 +326,15 @@ footer {
     #seja-bem-vindo p {font-size: 18px;}
     #sobre-2-container {width: 100%;}
     #rota h2 {font-size: 26px;}
+    .boxcard {width: 90%;}
 }
 
 @media (max-width: 400px) {
-    header {width: 100%}
     #sobre-2-container {width: 100vw;}
     .boxcard {width: 90%;}
 }
 
 @media (max-width: 320px) {
-    header {width: 320px;}
     #homepage {margin-left: 5px;}
     #menunav {margin-right: 0px;}
     #seja-bem-vindo h2 {font-size: 26px;}
