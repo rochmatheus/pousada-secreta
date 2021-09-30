@@ -333,7 +333,7 @@ footer {
 
 @media (max-width: 320px) {
     header {width: 320px;}
-    #homepage {margin-left: 10px;}
+    #homepage {margin-left: 5px;}
     #menunav {margin-right: 0px;}
     #seja-bem-vindo h2 {font-size: 26px;}
     #seja-bem-vindo p {font-size: 18px;}
