@@ -210,7 +210,6 @@ section {
 
 footer {
     background-color:rgb(1, 160, 160);
-    height: 245px;
     width: 100%;
     color: rgb(241, 250, 250);
 }
@@ -218,37 +217,49 @@ footer {
 #footer-parte1 {
     width: 80%;
     display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     border-bottom: solid teal;
-    height: 65%;
+    margin-bottom: 10px;
     margin-left: auto;
     margin-right: auto;
+}
+
+#container-endereco-cel-reservas {
+    display: flex; width: 100%; justify-content: space-around;
+}
+
+#container-endereco-cel-reservas img{
+    padding-right: 5px;
+}
+
+#container-contato p {
+    font-size: 20px;
+    width: 145px;
 }
 
 #endereco {
     display: flex;
     position: relative;
-    right: 30px;
+    align-items: center;
 }
 
 #img-endereco {
     width: 45px;
     height: 45px;
-    margin-right: 10px;
+    align-items: center;
 }
 
 #contato {
     display: flex;
-    width: 200px;
     font-size: 22px;
+    align-items: center;
 }
 
 #cel {
     display: flex;
     position: relative;   
-    right: 20px;
+    align-items: center;
 }
 
 #cel a {
@@ -259,18 +270,17 @@ footer {
 #img-cel {
     width: 45px;
     height: 45px;
-    margin-right: 10px;
 }
 
 #reservas {
     display: flex;
-    position: relative;  
+    position: relative; 
+    align-items: center; 
 }
 
 #img-reservas {
     width: 45px;
     height: 45px;
-    margin-right: 10px;
 }
 
 #reservas a {
@@ -282,6 +292,11 @@ footer {
 #footer-parte2 {
     color: white;
     text-align: center;
+}
+
+#footer-parte2 p {
+    margin: 0%;
+    padding: 5px;
 }
 
 #dev a:link {
@@ -296,8 +311,23 @@ footer {
     color: orange;
 }
 
+@media (max-width: 1180px) {
+    #footer-parte1 {display: flex; flex-direction: column; margin-bottom: 15px; padding-bottom: 20px}
+    #container-contato p {font-size: 24px; width: max-content;}
+    #container-endereco-cel-reservas {display: flex; justify-content: space-evenly; width: 100%;}
+    #container-endereco-cel-reservas p :not(last-child) {margin-right: 10px;}
+    #footer-parte2 {display: flex; flex-direction: column; align-items: space-evenly;}
+    #footer-parte2 p {font-size: 18px; margin: 0px;}
+}
+
 @media (max-width: 1074px) {
     #sobre-2-container {display: flex; flex-direction: column; align-items: center;}   
+}
+
+@media (max-width: 990px) {
+    #footer-parte1 {padding-bottom: 0px;}
+    #container-endereco-cel-reservas {display: flex; flex-flow: row wrap; align-items: center;}
+    #container-endereco-cel-reservas :not(last-child) {padding-bottom: 5px}
 }
 
 @media (max-width: 865px) {
@@ -309,15 +339,16 @@ footer {
     #banner {width: 350px; height: 150px;}
     #banner h1 {font-size: 36px;}
     #banner p {font-size: 18px;}
-    footer {height: 400px;}
-    #footer-parte2 {display: flex; flex-flow: column; justify-content: center; align-items: center; height: 140px;}
+    #footer-parte1 {padding-bottom: 0px;}
+    #container-endereco-cel-reservas {display: flex; flex-direction: column;}
+    #footer-parte2 {display: flex; flex-flow: column; justify-content: center; align-items: center;}
 }
 
 @media (max-width: 580px) {
     footer {max-width: 100%;}
     #footer-parte1 {display: flex; justify-content: center;}
     #contato {position: relative; width: 300px; text-align: center;}
-    #contato p {text-align: center; width: 300px;}
+    #contato p {text-align: center; width: 300px;}   
 }
 
 @media (max-width: 480px) {
@@ -349,4 +380,5 @@ footer {
     .paragrafo-e-imagem {display: flex; flex-direction: column;}
     .boxcard {width: 90%;}
     h3 {text-align: center;}
+    #container-endereco-cel-reservas {align-items: flex-start;}
 }

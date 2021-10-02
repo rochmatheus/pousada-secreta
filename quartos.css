@@ -61,6 +61,7 @@ span {
 section {
     position: relative;
     top: 100px;
+    margin-bottom: 80px;
 }
 
 #quarto-solteiro {
@@ -125,48 +126,56 @@ section {
 
 footer {
     background-color:rgb(1, 160, 160);
+    width: 100%;
     color: rgb(241, 250, 250);
-    height: 245px;
-    position: relative;
-    top: 100px;
 }
 
 #footer-parte1 {
-    color: white;
     width: 80%;
     display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     border-bottom: solid teal;
-    height: 65%;
+    margin-bottom: 10px;
     margin-left: auto;
     margin-right: auto;
 }
 
-#contato {
-    display: flex;
-    width: 200px;
-    right: 90px;
-    font-size: 22px;
+#container-endereco-cel-reservas {
+    display: flex; width: 100%; justify-content: space-around;
+}
+
+#container-endereco-cel-reservas img{
+    padding-right: 5px;
+}
+
+#container-contato p {
+    font-size: 20px;
+    width: 145px;
 }
 
 #endereco {
     display: flex;
     position: relative;
-    right: 30px;
+    align-items: center;
 }
 
 #img-endereco {
     width: 45px;
     height: 45px;
-    margin-right: 10px;
+    align-items: center;
+}
+
+#contato {
+    display: flex;
+    font-size: 22px;
+    align-items: center;
 }
 
 #cel {
     display: flex;
     position: relative;   
-    right: 20px;
+    align-items: center;
 }
 
 #cel a {
@@ -177,18 +186,17 @@ footer {
 #img-cel {
     width: 45px;
     height: 45px;
-    margin-right: 10px;
 }
 
 #reservas {
     display: flex;
-    position: relative;  
+    position: relative; 
+    align-items: center; 
 }
 
 #img-reservas {
     width: 45px;
     height: 45px;
-    margin-right: 10px;
 }
 
 #reservas a {
@@ -196,9 +204,15 @@ footer {
     text-decoration: none;
     color: white;
 }
+
 #footer-parte2 {
     color: white;
     text-align: center;
+}
+
+#footer-parte2 p {
+    margin: 0%;
+    padding: 5px;
 }
 
 #dev a:link {
@@ -218,6 +232,21 @@ footer {
     .fotos-quartos :last-child {margin-top: 60px;}
 }
 
+@media (max-width: 1180px) {
+    #footer-parte1 {display: flex; flex-direction: column; margin-bottom: 15px; padding-bottom: 20px}
+    #container-contato p {font-size: 24px; width: max-content;}
+    #container-endereco-cel-reservas {display: flex; justify-content: space-evenly; width: 100%;}
+    #container-endereco-cel-reservas p :not(last-child) {margin-right: 10px;}
+    #footer-parte2 {display: flex; flex-direction: column; align-items: space-evenly;}
+    #footer-parte2 p {font-size: 18px; margin: 0px;}
+}
+
+@media (max-width: 990px) {
+    #footer-parte1 {padding-bottom: 0px;}
+    #container-endereco-cel-reservas {display: flex; flex-flow: row wrap; align-items: center;}
+    #container-endereco-cel-reservas :not(last-child) {padding-bottom: 5px}
+}
+
 @media (max-width: 865px) {
     #endereco {display: flex; position: relative; right: 0px;}
     #cel {display: flex; position: relative; right: 0px;}
@@ -229,18 +258,22 @@ footer {
 }
 
 @media (max-width: 640px) {
+    h1 {font-size: 32px;}
+    .informacoes-quarto-titulo {font-size: 28px;}
+    .descricao-quartos {margin-bottom: 35px}
     footer {height: 400px;}
-    #footer-parte2 {display: flex; flex-flow: column; justify-content: center; align-items: center; height: 140px;}
+    #footer-parte1 {padding-bottom: 0px;}
+    #container-endereco-cel-reservas {display: flex; flex-direction: column;}
+    #footer-parte2 {display: flex; flex-flow: column; justify-content: center; align-items: center;}
 }
 
 @media (max-width: 580px) {
     #homepage {position: relative; right: 0%;}
     #menunav {position: relative; margin-right: 0px;}
     footer {max-width: 100%;}
-    #footer-parte1 {display: flex; justify-content: center; align-items: center;}
-    #contato {width: 300px; text-align: center;}
-    #contato p {text-align: center; width: 300px;}
-    
+    #footer-parte1 {display: flex; justify-content: center;}
+    #contato {position: relative; width: 300px; text-align: center;}
+    #contato p {text-align: center; width: 300px;}  
 }
 
 @media (max-width: 426px) {
@@ -260,7 +293,13 @@ footer {
 }
 
 @media (max-width: 320px) {
+    h1 {font-size: 26px}
     #homepage {margin-left: 10px;}
     #menunav {margin-right: 0px; left: 0px;}
     img {max-width: 320px;}
+    .descricao-quartos p {font-size: 18px;}
+    .informacoes-quarto-titulo {font-size: 26px;}
+    .informacoes-quarto-lista {font-size: 18px;}
+    #informacoes-quarto-ultima-lista {font-size: 18px;}
+    #container-endereco-cel-reservas {align-items: flex-start;}
 }
