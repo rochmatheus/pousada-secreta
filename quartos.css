@@ -201,6 +201,7 @@ footer {
 
 #reservas a {
     display: flex;
+    align-items: center;
     text-decoration: none;
     color: white;
 }
@@ -247,6 +248,10 @@ footer {
     #container-endereco-cel-reservas :not(last-child) {padding-bottom: 5px}
 }
 
+@media (max-width: 962px) {
+    #endereco, #cel, #reservas, p {margin-left: 10px;}
+}
+
 @media (max-width: 865px) {
     #endereco {display: flex; position: relative; right: 0px;}
     #cel {display: flex; position: relative; right: 0px;}
@@ -261,14 +266,12 @@ footer {
     h1 {font-size: 32px;}
     .informacoes-quarto-titulo {font-size: 28px;}
     .descricao-quartos {margin-bottom: 35px}
-    footer {height: 400px;}
     #footer-parte1 {padding-bottom: 0px;}
     #container-endereco-cel-reservas {display: flex; flex-direction: column;}
     #footer-parte2 {display: flex; flex-flow: column; justify-content: center; align-items: center;}
 }
 
 @media (max-width: 580px) {
-    #homepage {position: relative; right: 0%;}
     #menunav {position: relative; margin-right: 0px;}
     footer {max-width: 100%;}
     #footer-parte1 {display: flex; justify-content: center;}
@@ -277,19 +280,19 @@ footer {
 }
 
 @media (max-width: 426px) {
-    #homepage {margin-left: 25px;}
+    #homepage {margin-left: 10px;}
     .informacoes-quarto-lista {display: block;}
     #informacoes-quarto-ultima-lista {display: block;}
 }
 
 @media (max-width: 405px) {
-    #homepage {margin-left: 25px;}
-    .fotos-quartos img {width: 100%;}     
+    .fotos-quartos img {width: 100%;}
+    #container-endereco-cel-reservas {align-items: flex-start;}  
 }
 
 @media (max-width: 354px) {
     .informacoes-quarto-lista {display: block;}
-    #informacoes-quarto-ultima-lista {display: block;}
+    #informacoes-quarto-ultima-lista {display: block;} 
 }
 
 @media (max-width: 320px) {

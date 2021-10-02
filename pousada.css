@@ -285,6 +285,7 @@ footer {
 
 #reservas a {
     display: flex;
+    align-items: center;
     text-decoration: none;
     color: white;
 }
@@ -330,6 +331,10 @@ footer {
     #container-endereco-cel-reservas :not(last-child) {padding-bottom: 5px}
 }
 
+@media (max-width: 962px) {
+    #endereco, #cel, #reservas, p {margin-left: 10px;}
+}
+
 @media (max-width: 865px) {
     #endereco {display: flex; position: relative; right: 0px;}
     #cel {display: flex; position: relative; right: 0px;}
@@ -358,11 +363,17 @@ footer {
     #sobre-2-container {width: 100%;}
     #rota h2 {font-size: 26px;}
     .boxcard {width: 90%;}
+    #container-endereco-cel-reservas {align-items: flex-start;}
+}
+
+@media (max-width: 426px) {
+    #homepage {margin-left: 10px;}
 }
 
 @media (max-width: 400px) {
     #sobre-2-container {width: 100vw;}
     .boxcard {width: 90%;}
+    #container-endereco-cel-reservas {align-items: flex-start;}
 }
 
 @media (max-width: 320px) {
