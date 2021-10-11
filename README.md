@@ -3,9 +3,9 @@
 ## Sobre:
 <p>Website estático de uma pousada desenvolvido com base em um projeto final do curso de HTML da DevMedia.</p>
 <p>Criado em HTML e CSS, responsivo e utilizando recursos como flexboxes e elementos semânticos do HTML.</p><br>
-## Página Principal 👇🏻
+## Página Principal 👇🏻<br>
 ![Gif página principal](https://github.com/rochmatheus/pousada-secreta/blob/main/imagens/index-gif.gif)<br>
-## Página de demonstração dos quartos 👇🏻
+## Página de demonstração dos quartos 👇🏻<br>
 ![Gif página de quartos](https://github.com/rochmatheus/pousada-secreta/blob/main/imagens/gif-quartos.gif)<br>
 <p>Status: concluído<br>
 <p>Link: <https://rochmatheus.github.io/pousada-secreta/>
